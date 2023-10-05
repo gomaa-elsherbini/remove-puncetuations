@@ -31,7 +31,7 @@ string removePunctuations(string str)
 	string s2 = "";
 	for (int i = 0; i < str.length(); i++)
 	{
-		if (ispunct(str[i]))
+		if (!ispunct(str[i]))
 			s2 += str[i];
 	}
 	return s2;
